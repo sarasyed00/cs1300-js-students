@@ -3,10 +3,40 @@
   <head>
     <title>CS1300 JavaScript Studio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Abril+Fatface" />
+
   </head>
 
+  <style>
+    h1{
+        font-family: Abril Fatface;
+        color: green;
+    }
+
+    h3 {
+        font-family: Abril Fatface;
+        color: black;
+    }
+
+    .plant-grid {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    img {
+        width: 250px;
+        height: 250px;
+        margin-top: 5%;
+    }
+
+  </style>
+
   <body>
-    <!-- TODO: ADD HTML FOR WHATEVER YOU WANT TO SHOW ON THE PAGE!  -->
+    <h1>Plants </h1>
+    <button onclick="show_on_button_click()">Look at plants</button>
+    <div class="plant-grid" id="plant-grid"></div>
   </body>
   <script src="app.js"></script>
 </html>
